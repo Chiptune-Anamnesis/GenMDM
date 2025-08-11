@@ -146,3 +146,37 @@ Great for additive / formant-like timbres.
 - **LFO On** 74 · **LFO Speed** 1  
 - **DAC** 78/79/86/88/89/100–113 (Ch. 6)  
 - **Preset Store / Recall** 6 / 9 (0–15)
+
+---
+
+## GenMDM Editor (Desktop & Web)
+
+**GenMDM Editor** is a GUI for GenMDM (and the MDMI interface) that lets you edit YM2612/PSG patches, import/export instruments, and push settings to your Sega in real time.
+
+### Downloads & Links
+- **Windows (.exe):** [Download the latest release](https://github.com/2xAA/genmdm-editor/releases/latest)  
+  *(Grab `genMDM-Editor-Setup-*.exe` from Assets.)*
+- **Web version:** [Open the GenMDM Editor in your browser](https://2xaa.github.io/genmdm-editor/)
+
+### Highlights
+- **Full patch editor** for YM2612 (algorithms, feedback, pan, AMS/PMS, per-operator TL/MUL/DT/AR/DR/D2R/SL/RR/AM).  
+- **Instrument formats:** import/export **.tfi**, **.dmp**, **.y12**; manage banks with **.genm** (up to **128** instruments).  
+- **Session state:** autosave and manual save/load via **.ged**; **Send State** to re-sync hardware after power loss.  
+- **Works with MDMI:** toggle MDMI compatibility (Total Level invert, on-screen channel display).  
+- **Desktop or Web:** native desktop app (Win/Linux/mac in releases) or WebMIDI in Chrome/Edge/Firefox.  
+- **iOS/iPadOS:** use the “Web MIDI Browser” app to run the web editor on iPad/iPhone.
+
+### Quickstart
+1. Connect your **GenMDM** (or **MDMI**) over USB.  
+2. Launch the **desktop app** *or* open the **web editor**.  
+3. In the editor, select **MIDI Output → GenMDM/MDMI** (and your MIDI **Input** if you want the UI to follow your controller).  
+4. Pick a **channel**, tweak parameters, and **send** patches/state when ready.  
+5. Use **Store/Recall** on the hardware (e.g., CC6/CC9) or keep patches in the editor’s **.genm** bank.
+
+### File Types (at a glance)
+- **`.genm`** – editor bank (holds **128** GenMDM instruments; no globals/DAC).  
+- **`.ged`** – editor **state** (everything shown in the UI; great for backups).  
+- **`.tfi` / `.dmp` / `.y12`** – single-instrument import/export (format quirks noted in the app).
+
+> Project: MIT-licensed. Credits to **2xAA** for the modern Editor build.
+
