@@ -2,6 +2,8 @@
 
 **GenMDM** is a MIDI interface for the Sega Genesis / Mega Drive that exposes the **YM2612 (6 FM voices)** and **SN76489 (PSG)** directly to MIDI. It turns the console into a hardware synth: play from a keyboard, sequencer, or DAW with low latency and deep parameter control.
 
+Use this handy resource for GenMDM technical details and features: https://eggstoastbacon.github.io/genmdm-explorer/
+
 > **Note:** The CC map below reflects common GenMDM firmware (v102/v103 style).
 
 ---
