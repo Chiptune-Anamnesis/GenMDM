@@ -35,7 +35,11 @@
 - **Store to RAM**: **CC 6**, value **0–15** (16 slots)  
 - **Recall from RAM**: **CC 9**, value **0–15**
 
-Use these to save/recall full-voice setups quickly during performance.
+Store: On the FM channel you’re editing (MIDI ch 1–6), send CC 6 with a value N = 0–15 to write the current voice settings into RAM slot N.
+
+Recall: Later, on whatever FM channel you want to load it to, send CC 9 with the same value N.
+
+These are volatile RAM slots (cleared on power cycle)
 
 ---
 
@@ -128,7 +132,7 @@ Great for additive / formant-like timbres.
 ---
 
 ## Notes & Caveats
-- **Firmware v102 D2R:** Secondary decay behavior was inconsistent in early v102 builds; later builds (v103) corrected it.  
+- **Firmware v103**
 - **PSG gain staging:** Expect velocity-scaled loudness; if a patch feels quiet, layer a YM2612 carrier.  
 - **Realtime MIDI:** GenMDM typically ignores most realtime clock (F8–FF); sequencing is note/CC driven.
 
